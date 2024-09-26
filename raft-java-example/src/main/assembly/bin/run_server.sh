@@ -47,6 +47,14 @@ else
 	JAVA_CP=" -cp conf:lib/* "
 fi
 
+JAVA_VM_OPTS="--add-opens java.base/java.util=ALL-UNNAMED \
+--add-opens java.base/java.io=ALL-UNNAMED \
+--add-opens java.base/java.nio=ALL-UNNAMED \
+--add-opens java.base/java.lang=ALL-UNNAMED \
+--add-opens java.base/java.lang.invoke=ALL-UNNAMED \
+--add-opens java.base/sun.security.util=ALL-UNNAMED \
+--add-opens java.base/sun.security.action=ALL-UNNAMED "
+
 JAVA_OPTS=" $JAVA_BASE_OPTS $JAVA_MEM_OPTS $JAVA_JMX_OPTS $JAVA_GC_OPTS $JAVA_CP"
 
 RUNJAVA="$JAVA_HOME/bin/java"

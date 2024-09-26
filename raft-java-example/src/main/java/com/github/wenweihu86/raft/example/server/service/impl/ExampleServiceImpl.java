@@ -3,7 +3,7 @@ package com.github.wenweihu86.raft.example.server.service.impl;
 import com.baidu.brpc.client.BrpcProxy;
 import com.baidu.brpc.client.RpcClient;
 import com.baidu.brpc.client.RpcClientOptions;
-import com.baidu.brpc.client.instance.Endpoint;
+import com.baidu.brpc.client.channel.Endpoint;
 import com.github.wenweihu86.raft.Peer;
 import com.github.wenweihu86.raft.example.server.ExampleStateMachine;
 import com.github.wenweihu86.raft.example.server.service.ExampleProto;
