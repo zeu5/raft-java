@@ -623,7 +623,7 @@ public class RaftNode {
             LOG.warn("pre vote with peer[{}:{}] failed",
                     peer.getServer().getEndpoint().getHost(),
                     peer.getServer().getEndpoint().getPort());
-            peer.setVoteGranted(new Boolean(false));
+            peer.setVoteGranted(Boolean.FALSE);
         }
     }
 
@@ -689,7 +689,7 @@ public class RaftNode {
             LOG.warn("requestVote with peer[{}:{}] failed",
                     peer.getServer().getEndpoint().getHost(),
                     peer.getServer().getEndpoint().getPort());
-            peer.setVoteGranted(new Boolean(false));
+            peer.setVoteGranted(Boolean.FALSE);
         }
     }
 
